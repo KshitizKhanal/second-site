@@ -16,12 +16,17 @@
 
 .sidebar {
     background-color: rgb(234, 234, 243);
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     font-family: 'Oswald', sans-serif;
-    width: 155px;
-    height: 100vh;
+    /* width: 155px; */
+    height: 1000vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebarGo{
+    transform: translate(-255px,0);
+    position: absolute;
 }
 
 .sidebar nav {
@@ -184,3 +189,53 @@
     font-weight: bolder;
     font-size: larger;
 }
+
+.blogContainer{
+    
+    margin: 20px;
+}
+.blogContainer h1{
+    font-family: fantasy;
+}
+.blogItem{
+    margin: 20px 15px ;
+    font-family: cursive;
+}
+
+.blogItem p{
+    border-radius: 3px;
+    
+}
+
+.blogItem h2{
+
+}
+.blogItem p{
+
+}
+
+.main .intro h3{
+    text-align: center;
+    font-size: 100px;
+    margin: 100px;
+}
+
+@media (max-width: 1065px){
+    /* *{
+        background: rgb(111, 11, 111);
+    } */
+    
+}
+
+.options{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.close{
+    margin-left:109px;
+    /* transition: transform 0.3s ease-in;     */
+}
+
