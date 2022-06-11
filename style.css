@@ -1,88 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 
 
 }
-.container{
-    display:flex;
-    
-    
+
+.container {
+    display: flex;
+
+
 
 }
-.sidebar{
+
+.sidebar {
     background-color: rgb(234, 234, 243);
     flex-direction: row;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     font-family: 'Oswald', sans-serif;
-    width:12vw;
+    width: 155px;
     height: 100vh;
 }
 
-.sidebar nav{
+.sidebar nav {
     padding: 45px;
     justify-content: center;
     /* position: absolute; */
 }
 
-.sidebar nav li{
+.sidebar nav li a:hover {
+    color: rgb(248, 71, 71);
+    font-size: 50px;
+}
+
+.sidebar nav li {
     list-style: none;
     font-size: 30px;
     padding: 33px 0;
-    
+
 }
 
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(59, 59, 200);
+}
 
-.main{
+.main {
     /* background-color: yellowgreen; */
-    width:90vw;
-    
+    width: 90vw;
+
 }
 
-.infoContainer{
- /* background-color: blueviolet;    */
- height: 70vh;
- width: 70vw;
- margin: auto;
- display: flex;
- justify-content: space-around;
+.infoContainer {
+    /* background-color: blueviolet;    */
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-.devInfo{
-    display:flex;
+.devInfo {
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.devPic img{    
+
+.devPic img {
     height: 70vh;
 }
-.hi{
+
+.hi {
     font-size: 50px;
-    font-family: cursive ;
+    font-family: cursive;
 }
-.i-am{
+
+.i-am {
     font-size: 35px;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-weight: lighter;
 }
-.name{
+
+.name {
     font-size: 50px;
-    font-family: cursive ;
+    font-family: cursive;
     font-weight: bold;
 }
-.about{
+
+.about {
     font-size: 20px;
-    font-family: cursive ;
+    font-family: cursive;
 }
-.buttons{
+
+.buttons {
     margin-top: 25px;
 }
-.buttons button{
-    margin:0 3px;
-    padding:9px 14px;
+
+.buttons button {
+    margin: 0 3px;
+    padding: 9px 14px;
     border-radius: 22px;
     font-size: 15px;
     color: aqua;
@@ -90,7 +108,79 @@
     font-weight: lighter;
     cursor: pointer;
 }
-.buttons button:hover{
+
+.buttons button:hover {
+    background-color: bisque;
+    color: whitesmoke;
+}
+
+.buttons button a {
+    text-decoration: none;
+}
+
+.contactForm {
+    /* background-color: red; */
+    margin: 100px 0;
+    padding-top: 1vh;
+    padding-left: 10vw;
+    font-family: 'Trebuchet MS', sans-serif;
+    justify-content: center;
+}
+
+.contactForm h1 {
+    text-align: center;
+}
+
+.contactForm div {
+    padding: 10px;
+    
+}
+
+.form-group{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* width: 50vh;     */
+}
+.contactForm form div  input{
+    padding:3px;
+    width:16vw;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+.contactForm form form-check{
+    margin: 0px;
+}
+
+
+#form-check .form-check-input{
+    width: 15px;
+    padding:0;
+}
+.form-check-label{
+    
+    padding: 0;
+}
+
+/* .form-group .form-control #message {
+    height: 100vh;
+} */
+
+.btn-btn-primary{
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    width: 90px;
+    height: 30px;
+}
+
+.btn-btn-primary:hover{
+    border-radius: 10px;
     background-color: blue;
-    color: yellow;
+    color: white;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
 }
